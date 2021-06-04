@@ -1,0 +1,331 @@
+body {
+    background: rgb(255, 255, 255);
+}
+
+.content {
+    background: rgb(26, 56, 47);
+    width: 90%;
+    margin: 0px auto;
+    height: 80vh;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.center {
+    width: 94%;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    height: 70vh;
+}
+
+header {
+    width: 100%;
+    height: 10vh;
+    /* box-shadow: 1px 1px 1px 1px rgb(4, 27, 20);
+    border-radius: 0.5em; */
+}
+
+section {
+    width: 96%;
+    text-align: center;
+
+}
+
+section h2 {
+    font-family: 'Lato';
+    font-size: 40px;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+section h3 {
+    font-family: 'Lato';
+    color: blanchedalmond;
+    margin-top: 10px;
+    font-weight: lighter;
+    margin-bottom: 10px;
+
+}
+
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+.correo {
+    background: red;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    height: 50vh;
+}
+
+.telefono {
+    background: blue;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    height: 50vh;
+}
+
+.fax {
+    background: rgb(89, 89, 97);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    height: 50vh;
+}
+
+aside {
+    width: 4%;
+    background: rgb(24, 49, 42);
+    /* background-color: blueviolet; */
+    height: 70vh;
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+aside a {
+    text-decoration: none;
+}
+
+aside a:hover {
+    text-decoration: none;
+}
+
+aside img {
+    width: 70%;
+    margin-left: 10%;
+}
+
+aside .redesd,
+.uti {
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+}
+
+aside .redesd {
+    justify-content: space-around;
+}
+
+aside .uti {
+    justify-content: flex-start;
+    padding-top: 30px;
+}
+
+aside .redesd img {
+    border-radius: 50%;
+}
+
+aside .uti img {
+    margin-bottom: 20px;
+    border-radius: 0%;
+}
+
+footer {
+    border: 1px solid rgb(24, 49, 42);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    /* background-color: rgb(20, 13, 27); */
+    height: 70vh;
+}
+
+footer h6,
+p,
+a {
+    color: white;
+    font-size: 14px;
+}
+
+footer .definicion {
+    width: 60%;
+}
+
+footer .nosotros {
+    width: 30%;
+}
+
+footer .empleados {
+    width: 30%;
+}
+
+footer .contactos {
+    width: 50%;
+}
+
+footer h4,
+h5 {
+    color: blanchedalmond;
+}
+
+footer h4 {
+    font-size: 20px;
+}
+
+footer h5 {
+    font-size: 17px;
+}
+
+
+nav {
+    height: 10vh;
+    font-family: 'Lato';
+    /* background-color: blue; */
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.link-logo {
+    background: rgba(240, 236, 236, 0.918);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 2em;
+    color: rgb(3, 20, 15);
+}
+
+.link-logo:hover {
+    color: rgb(3, 20, 15);
+}
+
+.link-menu {
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.link-menu:hover {
+    color: #ffebcd;
+    text-align: center;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.logo2 {
+    background: rgb(4, 114, 9);
+    border-radius: 45%;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    border: 2px solid rgb(3, 20, 15);
+}
+
+.accordion {
+    padding-top: 7%;
+    margin: 2%;
+    color: rgb(26, 56, 47);
+}
+
+.accordion a {
+    text-decoration: none;
+    color: rgb(26, 56, 47);
+    font-size: 17px;
+}
+
+.accordion a:hover {
+    text-decoration: underline;
+    color: rgb(26, 56, 47);
+    font-size: 17px;
+
+}
+
+@media screen and (max-width:943px) {
+    aside {
+        width: 6%;
+    }
+
+    .center {
+        width: 94%;
+    }
+}
+
+
+
+@media screen and (max-width:571px) {
+    .link-menu {
+        font-size: 14px;
+    }
+
+    .link-menu:hover {
+        font-size: 14px;
+    }
+
+    .link-logo h2 {
+        font-size: 20px;
+    }
+
+}
+
+
+@media screen and (max-width:461px) {
+
+    .link-logo h2 {
+        font-size: 17px;
+    }
+
+}
+
+@media screen and (max-width:430px) {
+    .link-menu {
+        font-size: 12px;
+    }
+
+    .link-menu:hover {
+        font-size: 12px;
+    }
+
+    .link-logo h2 {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:371px) {
+
+    .link-menu {
+        font-size: 10px;
+    }
+
+    .link-menu:hover {
+        font-size: 10px;
+    }
+
+    .link-logo h2 {
+        font-size: 13px;
+    }
+
+}

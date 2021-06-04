@@ -1,0 +1,403 @@
+body {
+    background: rgb(255, 255, 255);
+}
+
+.content {
+    background: rgb(26, 56, 47);
+    width: 90%;
+    margin: 0px auto;
+    height: 80vh;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.center {
+    width: 94%;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    height: 70vh;
+}
+
+
+header {
+    width: 100%;
+    height: 10vh;
+    /* box-shadow: 1px 1px 1px 1px rgb(4, 27, 20);
+    border-radius: 0.5em; */
+}
+
+section {
+    width: 96%;
+    text-align: center;
+}
+
+section h2 {
+    font-family: 'Lato';
+    font-size: 40px;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+section h3 {
+    font-family: 'Lato';
+    color: blanchedalmond;
+    margin-top: 10px;
+    font-weight: lighter;
+    margin-bottom: 10px;
+
+}
+
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+aside {
+    width: 4%;
+    background: rgb(24, 49, 42);
+    /* background-color: blueviolet; */
+    height: 70vh;
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+aside a {
+    text-decoration: none;
+}
+
+aside a:hover {
+    text-decoration: none;
+}
+
+aside img {
+    width: 70%;
+    margin-left: 10%;
+}
+
+aside .redesd,
+.uti {
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+}
+
+aside .redesd {
+    justify-content: space-around;
+}
+
+aside .uti {
+    justify-content: flex-start;
+    padding-top: 30px;
+}
+
+aside .redesd img {
+    border-radius: 50%;
+}
+
+aside .uti img {
+    margin-bottom: 20px;
+    border-radius: 0%;
+}
+
+footer {
+    border: 1px solid rgb(24, 49, 42);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    /* background-color: rgb(20, 13, 27); */
+    height: 70vh;
+}
+
+footer h6,
+p,
+a {
+    color: white;
+    font-size: 14px;
+}
+
+footer .definicion {
+    width: 60%;
+}
+
+footer .nosotros {
+    width: 30%;
+}
+
+footer .empleados {
+    width: 30%;
+}
+
+footer .contactos {
+    width: 50%;
+}
+
+footer h4,
+h5 {
+    color: blanchedalmond;
+}
+
+footer h4 {
+    font-size: 20px;
+}
+
+footer h5 {
+    font-size: 17px;
+}
+
+
+nav {
+    height: 10vh;
+    font-family: 'Lato';
+    /* background-color: blue; */
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.link-logo {
+    background: rgba(240, 236, 236, 0.918);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 2em;
+    color: rgb(3, 20, 15);
+}
+
+.link-logo:hover {
+    color: rgb(3, 20, 15);
+}
+
+.link-menu {
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.link-menu:hover {
+    color: #ffebcd;
+    text-align: center;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+
+.logo2 {
+    background: rgb(4, 114, 9);
+    border-radius: 45%;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    border: 2px solid rgb(3, 20, 15);
+}
+
+.wrap {
+    margin: 50px auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.tarjeta-wrap {
+    margin: 10px;
+    -webkit-perspective: 800;
+    perspective: 800;
+}
+
+.tarjeta {
+    width: 300px;
+    height: 350px;
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: .7s ease;
+    transition: .7s ease;
+    -webkit-box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
+    box-shadow: 0px 10px 15px -5px rgba(0, 0, 0, 0.65);
+
+}
+
+.adelante,
+.atras {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+
+
+.adelante {
+    width: 100%;
+}
+
+.atras {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+
+    padding: 15px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: blanchedalmond;
+    text-align: center;
+    font-family: "open sans";
+}
+
+.atras p {
+    color: rgb(26, 56, 47);
+    font-size: 20px;
+}
+
+.tarjeta-wrap:hover .tarjeta {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.card1 {
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/jugyff-66308.appspot.com/o/estilo1.png?alt=media&token=1147487c-01ad-43de-add8-ee0eeba88687');
+    background-size: cover;
+}
+
+.card2 {
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/jugyff-66308.appspot.com/o/estilo2.jpeg?alt=media&token=86bb08fb-9801-4950-8eca-887e21f96b2c');
+    background-size: cover;
+}
+
+.card3 {
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/jugyff-66308.appspot.com/o/estilo3.jpeg?alt=media&token=35bf4c5f-a42b-41a3-a8c5-e73b982cf975');
+    background-size: cover;
+}
+
+.card4 {
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/jugyff-66308.appspot.com/o/estilo4.jpeg?alt=media&token=6583dbf3-19cc-4af6-b278-51b995b4e48e');
+    background-size: cover;
+}
+
+.card5 {
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/jugyff-66308.appspot.com/o/estilo5.jpeg?alt=media&token=c50b50d6-3b85-4335-8086-31e9b17066bf');
+    background-size: cover;
+}
+
+.card6 {
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/jugyff-66308.appspot.com/o/estilo6.jpeg?alt=media&token=97b370cc-df84-4863-b42f-16a4d4d01d1f');
+    background-size: cover;
+}
+
+.card7 {
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/jugyff-66308.appspot.com/o/estilo7.jpeg?alt=media&token=f21d3ffa-c353-40a5-be11-f6781c594d41');
+    background-size: cover;
+}
+
+.card8 {
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/jugyff-66308.appspot.com/o/jonathan-borba-RUx3vOM6lNk-unsplash.jpg?alt=media&token=aa9c17ae-1f6f-4ced-8cec-1b074bc43bed');
+    background-size: cover;
+}
+
+
+@media screen and (max-width:943px) {
+    aside {
+        width: 6%;
+    }
+
+    .center {
+        width: 94%;
+    }
+}
+
+
+
+@media screen and (max-width:571px) {
+    .link-menu {
+        font-size: 14px;
+    }
+
+    .link-menu:hover {
+        font-size: 14px;
+    }
+
+    .link-logo h2 {
+        font-size: 20px;
+    }
+
+}
+
+
+@media screen and (max-width:461px) {
+
+    .link-logo h2 {
+        font-size: 17px;
+    }
+
+}
+
+@media screen and (max-width:430px) {
+    .link-menu {
+        font-size: 12px;
+    }
+
+    .link-menu:hover {
+        font-size: 12px;
+    }
+
+    .link-logo h2 {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:371px) {
+
+    .link-menu {
+        font-size: 10px;
+    }
+
+    .link-menu:hover {
+        font-size: 10px;
+    }
+
+    .link-logo h2 {
+        font-size: 13px;
+    }
+
+}

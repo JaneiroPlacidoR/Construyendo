@@ -1,0 +1,18 @@
+.content{
+    width: 100%;
+    background: rgb(26, 56, 47);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-filter{
+    background: rgb(255, 255, 255);
+    width: 50%;
+    height: 100px;
+    border: 15px solid blanchedalmond;
+    text-align: center;
+    font-size: 23px;
+}
